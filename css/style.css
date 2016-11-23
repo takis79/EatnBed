@@ -1,0 +1,538 @@
+body {
+	width: 100%;
+	height: 100%;
+  margin: 0 auto;
+  font-family: Roboto;
+  color: black;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+	min-width: 860px;
+  width: 100%;
+  height: 3em;
+  background-color: #EE7600;
+  position: fixed;
+  z-index: 2;
+}
+
+#introduction {
+	text-align: center;
+	margin: auto;
+	margin-top: 5em;
+	width: 20em;
+	height: auto;
+	margin-left: 37%;
+	margin-right: 37%;
+	position: fixed;
+	z-index: 2;
+	color: white;
+	padding: 1em;
+	padding-top: 0.5em;
+	background-color:rgba(238,118,0,.9);
+	box-shadow:0 0 3px #999;
+}
+
+.headericon {
+	float: right;
+  padding: 14px;
+  font-size: 16px;
+  display: table-cell;
+  vertical-align: middle;
+	cursor: pointer;
+	color: #fdf1e5;
+}
+
+.loggedin {
+	display: none;
+}
+
+.loggedout {
+	display: block;
+}
+
+#location {
+	width: 6.1em;
+}
+
+#usericon {
+	float: right;
+	height: 3em;
+	width: 3em;
+	background-image: url('images/user.png');
+	background-size: cover;
+	cursor: pointer;
+}
+
+#sidebaricon {
+  height: 3em;
+  width: 3em;
+  background-image: url('images/sidebar.png');
+  float: left;
+  cursor: pointer;
+}
+
+#logo {
+  height: inherit;
+  padding-left: 0.3em;
+  font-size: 1.5em;
+  display: table-cell;
+  vertical-align: middle;
+	cursor: pointer;
+	color: #F8EEE5;
+}
+
+#searchbox {
+  height: inherit;
+  display: table-cell;
+  vertical-align: middle;
+  width: inherit;
+}
+
+#search {
+  width: 15.5em;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid #F8EEE5;
+  padding: 3px;
+  padding-left: 2em;
+  margin-left: 45%;
+  background-image: url('images/search.png');
+}
+
+#sidebar {
+	overflow: scroll;
+	height: auto;
+	position: fixed;
+	display: none;
+	width: 17em;
+	background-color: white;
+	float: left;
+	z-index: 1;
+}
+
+#filters {
+	width: inherit;
+}
+
+#cats {
+	display: none;
+	width: inherit;
+}
+
+#searchhistory {
+	display: none;
+	width: inherit;
+}
+
+.category {
+	padding: 1em;
+	display: table-cell;
+	vertical-align: middle;
+	width: inherit;
+	float: left;
+	color: white;
+	background-color: #198c8c;
+	cursor: pointer;
+}
+
+.catexpand, .catshrink {
+	cursor: pointer;
+	float: right;
+}
+
+.filter {
+	padding: 1em;
+	display: table-cell;
+	vertical-align: middle;
+	width: inherit;
+	float: left;
+	background-color: #ffffff;
+	color: black;
+	cursor: pointer;
+	border-bottom: 1px solid #008080;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+	position: absolute;
+  z-index: 0;
+	float: left;
+}
+
+.genwrapper {
+	width: inherit;
+	height:inherit;
+	position: fixed;
+	z-index: -1;
+}
+.profwrapper {
+	width: inherit;
+	height:inherit;
+	position: fixed;
+	z-index: -1;
+	background-color: #fdfdfd;
+}
+#results {
+	height: inherit;
+	width: 35%;
+	background-color: #fdfdfd;
+	z-index: 0;
+	float: right;
+}
+#profile12 {
+	height: inherit;
+	width:35%;
+	background-color: #fdfdfd;
+	z-index: 0;
+	float: right;
+}
+#place {
+	height: inherit;
+	width: 35%;
+	background-color: #fdfdfd;
+	z-index: 0;
+	float: right;
+}
+
+#resultsheader {
+	cursor: default;
+	position: fixed;
+	width: 35%;
+	padding: 1em;
+	color: white;
+	background-color: #198c8c;
+	z-index: 1;
+}
+
+#placeheader{
+	position: fixed;
+	cursor: default;
+	width: 35%;
+	height: 1.5em;
+	padding: 1em;
+	font-size: 1em;
+	color: white;
+	background-color: #198c8c;
+	z-index: 1;
+}
+
+#headerrating {
+	float: right;
+	padding-right: 5%;
+	font-size: 1em;
+	color: #EE7600;
+}
+
+#imagecontainer {
+	width: 100%;
+	background-color: #d3d3d3;
+}
+
+.placesection {
+	padding: 0.5em;
+	background-color: #4ca6a6;
+	color: white;
+}
+
+.review {
+	background-color: #f1f1f1;
+	padding: 0.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-right: 0.5em;
+}
+
+
+#sortbox {
+	float: right;
+	cursor: pointer;
+	margin-right: 2em;
+}
+
+.result {
+	width: auto;
+	min-height: 106px;
+	border-bottom: solid #008080 1px;
+	padding-top: 4px;
+	padding-right: 2px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.place-details {
+	min-height: 104px;
+	width: auto;
+	padding-top: 4px;
+	background-color: #fdfdfd;
+	z-index: 1;
+}
+
+.title {
+	padding: 5px;
+	color: #007373;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+hr {
+    margin-top: 0em;
+    margin-bottom: -1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset ;
+    border-width: 1px;
+    border-color: #008080;
+}
+
+.reviews-title {
+   font-size:1.3em;
+   font-weight: bold;
+}
+
+.rating {
+	float: right;
+	font-size: 1.2em;
+	padding-right: 5px;
+	color: #EE7600;
+}
+
+.details {
+	padding-bottom: 1px;
+	padding-left: 10px;
+	padding-top: 2px;
+	color: #474747;
+}
+
+.restaurant-image {
+	float: right;
+	height: 100px;
+	width: 100px;
+	border: 1px solid #EE7600;
+}
+
+.restaurant-image-large {
+	display: block;
+	position: relative;
+	margin: auto;
+}
+
+.markerlink {
+	text-decoration: none;
+	color: #198c8c;
+}
+
+#sortbar {
+	position:fixed;
+	height: auto;
+	width: inherit;
+	display: none;
+	z-index: 1;
+	cursor: pointer;
+}
+
+#sortwrapper {
+	float: right;
+	width: 7em;
+	margin-right: 2em;
+}
+
+.sortoption {
+	width: 7em;
+	padding: 1em;
+	background-color: white;
+	vertical-align: middle;
+	border: 1px solid #008080;
+	border-top: none;
+	color: black;
+}
+
+.open {
+	font-size: 0.7em;
+	width: 3em;
+	padding: 0.1em;
+	background-color: #EE7600;
+	text-align: center;
+	color: #F8EEE5;
+	float: left;
+	margin-top: 0.35em;
+	margin-left: 0.5em;
+}
+
+#registercontainer, #logincontainer {
+	z-index: 5;
+	position: fixed;
+	display: none;
+	width:30em;
+	background-color:rgba(250,250,252,.9);
+	margin-left: 34%;
+	box-shadow:0 0 3px #999;
+}
+
+#container_body{
+	padding:0.5em;
+	}
+.form_title{
+	font-size:2em;
+	color:#EE7600;
+	text-align:center;
+	font-weight:normal;
+	}
+
+.input_name{
+	width:99%;
+	font-size:1em;
+	}
+#email_form{
+	clear:both;
+	padding:15px 0 10px 0px;
+	}
+.input_email{
+	width:99%;
+	font-size: 1em;
+	}
+#Re_email_form{
+	padding:5px 0 5px 0px;
+	}
+.input_Re_email{
+	width:99%;
+	font-size:1em;
+	}
+#password_form{
+	padding:10px 0 10px 0px;
+	}
+
+.input_password{
+	width:99%;
+	font-size:1em;
+	}
+
+select{
+	border: 1px solid #EE7600;
+	padding:5px;
+	}
+
+.userbutton {
+	font-size:1em;
+	color: white;
+	text-align:center;
+	background-color: #EE7600;
+	padding:10px;
+	margin-top:10px;
+	cursor: pointer;
+	}
+#errorBox{
+	color:#F00;
+	}
+
+.closebutton {
+	float: right;
+	color: #EE7600;
+	cursor: pointer;
+	font-size: 1.2em;
+}
+
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+}
+
+.clearfix {
+  *display: inline-block;
+}
+
+section {
+  width: 420px;
+  background: #fff;
+  position: relative;
+  margin: 50px auto;
+  margin-top: 100px;
+  padding: 0 0 4px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+section:after {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  bottom: 4px;
+  content: "";
+  background: #f6f6f6;
+  width: 84px;
+  z-index: -1;
+}
+section header {
+  text-align: center;
+  width: 100%;
+}
+section header .user {
+  float: right;
+  width: 335px;
+  padding: 30px 0;
+}
+section header .user .avatar {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: #fff;
+}
+section header .user .avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+section header .user h2 {
+  margin: 15px 0 0;
+  color: #000;
+  font: normal 24px/1 "GothamRoundedMedium", sans-serif;
+}
+section header .user p {
+  color: #b0b0b0;
+  font-size: 18px;
+  margin: 15px 0 0;
+}
+
+section .menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+section .menu a {
+  display: block;
+  text-decoration: none;
+  padding: 30px 0 30px 120px;
+  font-size: 20px;
+  color: #b2b2b2;
+  border-left: 4px solid #fff;
+  background: rgba(232, 232, 232, 0.4) url("images/usericon.png") no-repeat 26px center;
+  -webkit-transition: all ease 0.2s;
+          transition: all ease 0.2s;
+}
+section .menu a:hover {
+  padding-left: 130px;
+  color: #787878;
+  border-color: #198c8c;
+}
+section .menu a.active {
+  color: #787878;
+  font-family: "GothamRoundedMedium", sans-serif;
+}
+section .menu a.star {
+  background-image: url("images/star.png");
+  background-color: transparent;
+}
+section .menu a.search {
+  background-image: url("images/search2.png");
+}
