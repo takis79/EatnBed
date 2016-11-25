@@ -4,20 +4,25 @@ body {
   margin: 0 auto;
   font-family: Roboto;
   color: black;
+	  background-image: url('images/back.jpg');
+
 }
 
 #wrapper {
   width: 100%;
   height: 100%;
+		  background-image: url('images/user.png');
+
 }
 
 #header {
 	min-width: 860px;
   width: 100%;
   height: 3em;
-  background-color: #EE7600;
+  background-color: #141a65;
   position: fixed;
   z-index: 2;
+  box-shadow: 0 4px 8px 0 rgba(8, 0, 176, 0.2), 0 6px 20px 0 rgba(81, 70, 238, 0.19);
 }
 
 #introduction {
@@ -33,7 +38,7 @@ body {
 	color: white;
 	padding: 1em;
 	padding-top: 0.5em;
-	background-color:rgba(238,118,0,.9);
+	background-color: rgba(36, 55, 196, 0.9);
 	box-shadow:0 0 3px #999;
 }
 
@@ -91,6 +96,8 @@ body {
   display: table-cell;
   vertical-align: middle;
   width: inherit;
+	  box-shadow: 0 4px 8px 0 rgba(8, 0, 176, 0.2), 0 6px 20px 0 rgba(81, 70, 238, 0.19);
+
 }
 
 #search {
@@ -102,6 +109,8 @@ body {
   padding-left: 2em;
   margin-left: 45%;
   background-image: url('images/search.png');
+	  box-shadow: 0 4px 8px 0 rgba(8, 0, 176, 0.2), 0 6px 20px 0 rgba(81, 70, 238, 0.19);
+
 }
 
 #sidebar {
@@ -113,6 +122,7 @@ body {
 	background-color: white;
 	float: left;
 	z-index: 1;
+
 }
 
 #filters {
@@ -136,8 +146,10 @@ body {
 	width: inherit;
 	float: left;
 	color: white;
-	background-color: #198c8c;
+	background-color: #2437c4;
 	cursor: pointer;
+	  box-shadow: 0 4px 8px 0 rgba(8, 0, 176, 0.2), 0 6px 20px 0 rgba(81, 70, 238, 0.19);
+
 }
 
 .catexpand, .catshrink {
@@ -154,18 +166,22 @@ body {
 	background-color: #ffffff;
 	color: black;
 	cursor: pointer;
-	border-bottom: 1px solid #008080;
+	border-bottom: 1px solid #2437c4;
+	  box-shadow: 0 4px 8px 0 rgba(8, 0, 176, 0.2), 0 6px 20px 0 rgba(81, 70, 238, 0.19);
+
 }
 
 #map {
-  height: 100%;
-  width: 100%;
-	position: absolute;
-  z-index: 0;
-	float: left;
+	position: fixed;
+  height: 500px;
+  width: 1100px;
+  z-index: 1;
+	float: top;
+
 }
 
 .genwrapper {
+	background-image: url("images/back.jpg");
 	width: inherit;
 	height:inherit;
 	position: fixed;
@@ -177,37 +193,47 @@ body {
 	position: fixed;
 	z-index: -1;
 	background-color: #fdfdfd;
+	  box-shadow: 0 4px 8px 0 rgba(8, 0, 176, 0.2), 0 6px 20px 0 rgba(81, 70, 238, 0.19);
+
 }
 #results {
-	height: inherit;
-	width: 35%;
+	height: 500px;
+	width: 450px;
 	background-color: #fdfdfd;
 	z-index: 0;
 	float: right;
+	  box-shadow: 0 4px 8px 0 rgba(8, 0, 176, 0.2), 0 6px 20px 0 rgba(81, 70, 238, 0.19);
+
 }
 #profile12 {
 	height: inherit;
-	width:35%;
+	width: 450px;
 	background-color: #fdfdfd;
 	z-index: 0;
 	float: right;
+	  box-shadow: 0 4px 8px 0 rgba(8, 0, 176, 0.2), 0 6px 20px 0 rgba(81, 70, 238, 0.19);
+
 }
 #place {
 	height: inherit;
-	width: 35%;
+	width: 450px;
 	background-color: #fdfdfd;
 	z-index: 0;
 	float: right;
+	  box-shadow: 0 4px 8px 0 rgba(8, 0, 176, 0.2), 0 6px 20px 0 rgba(81, 70, 238, 0.19);
+
 }
 
 #resultsheader {
 	cursor: default;
 	position: fixed;
-	width: 35%;
+	width: 450px;
 	padding: 1em;
 	color: white;
-	background-color: #198c8c;
+	background-color: #2437c4;
 	z-index: 1;
+  box-shadow: 0 4px 8px 0 rgba(8, 0, 176, 0.2), 0 6px 20px 0 rgba(81, 70, 238, 0.19);
+
 }
 
 #placeheader{
@@ -218,15 +244,17 @@ body {
 	padding: 1em;
 	font-size: 1em;
 	color: white;
-	background-color: #198c8c;
+	background-color: #2437c4;
 	z-index: 1;
+  box-shadow: 0 4px 8px 0 rgba(8, 0, 176, 0.2), 0 6px 20px 0 rgba(81, 70, 238, 0.19);
+
 }
 
 #headerrating {
 	float: right;
 	padding-right: 5%;
 	font-size: 1em;
-	color: #EE7600;
+	color: #141a65;
 }
 
 #imagecontainer {
@@ -236,8 +264,10 @@ body {
 
 .placesection {
 	padding: 0.5em;
-	background-color: #4ca6a6;
+	background-color: #2437c4;
 	color: white;
+	  box-shadow: 0 4px 8px 0 rgba(8, 0, 176, 0.2), 0 6px 20px 0 rgba(81, 70, 238, 0.19);
+
 }
 
 .review {
@@ -258,11 +288,14 @@ body {
 .result {
 	width: auto;
 	min-height: 106px;
-	border-bottom: solid #008080 1px;
+	border-left:solid #2437c4 1px;
+	border-bottom: solid #2437c4 1px;
 	padding-top: 4px;
 	padding-right: 2px;
 	cursor: pointer;
 	z-index: 1;
+	  box-shadow: 0 4px 8px 0 rgba(8, 0, 176, 0.2), 0 6px 20px 0 rgba(81, 70, 238, 0.19);
+
 }
 
 .place-details {
@@ -275,7 +308,7 @@ body {
 
 .title {
 	padding: 5px;
-	color: #007373;
+	color: #2437c4;
 	font-size: 1.3em;
 	font-weight: bold;
 }
@@ -287,7 +320,7 @@ hr {
     margin-right: auto;
     border-style: inset ;
     border-width: 1px;
-    border-color: #008080;
+    border-color: #2437c4;
 }
 
 .reviews-title {
@@ -299,7 +332,9 @@ hr {
 	float: right;
 	font-size: 1.2em;
 	padding-right: 5px;
-	color: #EE7600;
+	color: #0014ee
+	  box-shadow: 0 4px 8px 0 rgba(8, 0, 176, 0.2), 0 6px 20px 0 rgba(81, 70, 238, 0.19);
+
 }
 
 .details {
@@ -313,7 +348,9 @@ hr {
 	float: right;
 	height: 100px;
 	width: 100px;
-	border: 1px solid #EE7600;
+	border: 1px solid #2437c4;
+	  box-shadow: 0 4px 8px 0 rgba(8, 0, 176, 0.2), 0 6px 20px 0 rgba(81, 70, 238, 0.19);
+
 }
 
 .restaurant-image-large {
@@ -324,7 +361,7 @@ hr {
 
 .markerlink {
 	text-decoration: none;
-	color: #198c8c;
+	color: #2437c4;
 }
 
 #sortbar {
@@ -347,7 +384,7 @@ hr {
 	padding: 1em;
 	background-color: white;
 	vertical-align: middle;
-	border: 1px solid #008080;
+	border: 1px solid #2437c4;
 	border-top: none;
 	color: black;
 }
@@ -356,13 +393,14 @@ hr {
 	font-size: 0.7em;
 	width: 3em;
 	padding: 0.1em;
-	background-color: #EE7600;
+	background-color: #5146ee
 	text-align: center;
-	color: #F8EEE5;
+	color: #0000ee;
 	float: left;
 	margin-top: 0.35em;
 	margin-left: 0.5em;
 }
+
 
 #registercontainer, #logincontainer {
 	z-index: 5;
@@ -371,7 +409,7 @@ hr {
 	width:30em;
 	background-color:rgba(250,250,252,.9);
 	margin-left: 34%;
-	box-shadow:0 0 3px #999;
+  box-shadow: 0 4px 8px 0 rgba(8, 0, 176, 0.2), 0 6px 20px 0 rgba(81, 70, 238, 0.19);
 }
 
 #container_body{
@@ -379,7 +417,7 @@ hr {
 	}
 .form_title{
 	font-size:2em;
-	color:#EE7600;
+	color:#2437c4;
 	text-align:center;
 	font-weight:normal;
 	}
@@ -413,7 +451,7 @@ hr {
 	}
 
 select{
-	border: 1px solid #EE7600;
+	border: 1px solid #2437c4;
 	padding:5px;
 	}
 
@@ -421,7 +459,7 @@ select{
 	font-size:1em;
 	color: white;
 	text-align:center;
-	background-color: #EE7600;
+	background-color: #2437c4;
 	padding:10px;
 	margin-top:10px;
 	cursor: pointer;
@@ -432,7 +470,7 @@ select{
 
 .closebutton {
 	float: right;
-	color: #EE7600;
+	color: #2437c4;
 	cursor: pointer;
 	font-size: 1.2em;
 }

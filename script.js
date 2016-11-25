@@ -389,7 +389,7 @@ function callbackid(place, status) {
     });
 
     var infoWindow = new google.maps.InfoWindow({
-      content:"<a style='color:#EE7600;text-decoration:none;font-size:2em;font-weight:bold;'>" + place.name + "</a>"
+      content:"<a style='color:#2437c4;text-decoration:none;font-size:2em;font-weight:bold;'>" + place.name + "</a>"
     });
 
     // add marker at current place
@@ -518,7 +518,7 @@ $(document).ready(function() {
   var cuisinetoggle = false;
   var searchtoggle = false;
 
-  var cuisines = ['Chinese', 'Japanese', 'Italian', 'Greek', 'Indian'];
+  var amenities = ['Restaurants', 'Take-away', 'Hotels', 'Bar', 'Spa'];
 
   // store user's current location
   var lat;
@@ -597,8 +597,8 @@ $(document).ready(function() {
 
   // append cuisine filters at sidebar
   $(window).load(function() {
-    for (i = 0; i < cuisines.length; i++) {
-      $('#cats').append('<div class="filter filter-cuisine" data-cuisineitem="' + cuisines[i] + '">' + cuisines[i] + '</div>');
+    for (i = 0; i < amenities.length; i++) {
+      $('#cats').append('<div class="filter filter-cuisine" data-cuisineitem="' + amenities[i] + '">' + amenities[i] + '</div>');
     }
   });
 
@@ -617,7 +617,7 @@ $(document).ready(function() {
   });
 
   $(document).on("mouseenter", ".filter", function() {
-    $(this).css("background-color", "#f19132");
+    $(this).css("background-color", "#2437c4");
     $(this).css("color", "#ffffff");
   });
 
@@ -627,7 +627,7 @@ $(document).ready(function() {
   });
 
   $(document).on("mouseenter", ".result", function() {
-    $(this).css("background-color", "#f8c899");
+    $(this).css("background-color", "#726dff");
   });
 
   $(document).on("mouseleave", ".result", function() {
@@ -635,13 +635,13 @@ $(document).ready(function() {
   });
 
   $(document).on("click", ".result", function() {
-    $(this).css("background-color", "#f39f4c");
+    $(this).css("background-color", "#2437c4");
     var id = $(this).data('id');
     window.location.href = 'place.html?id=' + id;
   });
 
   $(document).on("mouseenter", ".sortoption", function() {
-    $(this).css("background-color", "#f19132");
+    $(this).css("background-color", "#2437c4");
     $(this).css("color", "#ffffff");
   });
 
@@ -839,7 +839,7 @@ $(document).ready(function() {
 
   // change background colour of hovered icons in header
   $('.headericon').hover(function() {
-    $(this).css("background-color", "#BE5E00");
+    $(this).css("background-color", "#2437c4");
   }, function() {
     $(this).css("background-color", "");
   });
