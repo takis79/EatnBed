@@ -348,8 +348,7 @@ function nearYou() {
         icon: {
           url: 'images/home.png',
           anchor: new google.maps.Point(8, 25),
-          scaledSize: new google.maps.Size(15, 25)
-        }
+scaledSize: new google.maps.Size(41, 41)        }
       });
       google.maps.event.addListener(homemarker, 'click', function() {
         infoWindow.setContent("<span style='font-weight:bold;color:#a6a6a6;font-size:1.5em;'>You are here.</span>");
@@ -767,8 +766,7 @@ $(document).ready(function() {
       var icon = {
         url: 'images/selected.png',
         anchor: new google.maps.Point(8, 25),
-        scaledSize: new google.maps.Size(15, 25)
-      };
+scaledSize: new google.maps.Size(41, 41)      };
       markers.forEach(function (m) {
         if (m.getPlace().placeId == placeId) marker = m;
       });
@@ -781,8 +779,7 @@ $(document).ready(function() {
       var icon = {
         url: 'images/marker.png',
         anchor: new google.maps.Point(8, 25),
-        scaledSize: new google.maps.Size(15, 25)
-      };
+scaledSize: new google.maps.Size(41, 41)      };
       markers.forEach(function (m) {
         if (m.getPlace().placeId == placeId) marker = m;
       });
