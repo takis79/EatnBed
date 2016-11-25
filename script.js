@@ -128,7 +128,7 @@ function addMarker(place) {
     icon: {
       url: 'images/hotel.png',
       anchor: new google.maps.Point(8, 25),
-      scaledSize: new google.maps.Size(15, 25)
+      scaledSize: new google.maps.Size(41, 41)
     },
     place: {
       location: place.geometry.location,
@@ -143,7 +143,7 @@ function addMarker(place) {
       icon: {
         url: 'images/marker.png',
         anchor: new google.maps.Point(8, 25),
-        scaledSize: new google.maps.Size(15, 25)
+        scaledSize: new google.maps.Size(41, 41)
       },
       place: {
         location: place.geometry.location,
@@ -311,7 +311,7 @@ function addHomeMarker(infoWindow, pos) {
     icon: {
       url: 'images/home.png',
       anchor: new google.maps.Point(8, 25),
-      scaledSize: new google.maps.Size(15, 25)
+        scaledSize: new google.maps.Size(41, 41)
     }
   });
   google.maps.event.addListener(homemarker, 'click', function() {
