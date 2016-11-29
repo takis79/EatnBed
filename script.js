@@ -247,7 +247,7 @@ function addMarker(place) {
     map: map,
     position: place.geometry.location,
     icon: {
-      url: 'images/hotel.png',
+      url: 'css/images/hotel.png',
       anchor: new google.maps.Point(8, 25),
       scaledSize: new google.maps.Size(41, 41)
     },
@@ -262,7 +262,7 @@ function addMarker(place) {
       map: map,
       position: place.geometry.location,
       icon: {
-        url: 'images/marker.png',
+        url: 'css/images/marker.png',
         anchor: new google.maps.Point(8, 25),
         scaledSize: new google.maps.Size(41, 41)
       },
@@ -307,7 +307,7 @@ function addResult(place) {
   if (place.photos)
     result += '<img class="restaurant-image" src="' + place.photos[0].getUrl({'maxWidth': 100, 'maxHeight': 100}) + '"/>';
   else
-    result += '<img class="restaurant-image" src="images/restaurant.png"/>';
+    result += '<img class="restaurant-image" src="css/images/restaurant.png"/>';
   if (openNow)
     result += '<div class="open">OPEN</div>';
   result += '<span class="title">' + place.name + '</span><div style="font-size: 1em" class="rating">'+ getIconRating(place.rating) +'</div>';
@@ -430,7 +430,7 @@ function addHomeMarker(infoWindow, pos) {
     map: map,
     position: pos,
     icon: {
-      url: 'images/home.png',
+      url: 'css/images/home.png',
       anchor: new google.maps.Point(8, 25),
         scaledSize: new google.maps.Size(41, 41)
     }
@@ -583,7 +583,7 @@ styles: [
         map: map,
         position: pos,
         icon: {
-          url: 'images/home.png',
+          url: 'css/images/home.png',
           anchor: new google.maps.Point(8, 25),
 scaledSize: new google.maps.Size(41, 41)        }
       });
@@ -749,7 +749,7 @@ styles: [
       map: map,
       position: place.geometry.location,
       icon: {
-        url: 'images/selected.png',
+        url: 'css/images/selected.png',
         anchor: new google.maps.Point(10, 32),
       }
     });
@@ -774,7 +774,7 @@ function createPlaceView(place) {
 	if (place.photos)
 		result += '<div id="imagecontainer"><img class="restaurant-image-large" src="' + place.photos[0].getUrl({'maxWidth': 500, 'maxHeight': 300}) + '"/></div>';
 	else
-		result += '<div id="imagecontainer"><img class="restaurant-image-large" src="images/restaurant.png"/></div>';
+		result += '<div id="imagecontainer"><img class="restaurant-image-large" src="css/images/restaurant.png"/></div>';
   // address
   var address = place.formatted_address.split(', United Kingdom')[0];
    result+='<div class="details"><table align="center"><tr><td align="center"><i class="fa fa-map-marker"></i></td><td> ' + address + '</td></tr>';
@@ -955,10 +955,10 @@ $(document).ready(function() {
   });
 
   $('#sidebaricon').hover(function() {
-    $(this).css("background-image", "url('images/sidebarselected.png')");
+    $(this).css("background-image", "url('css/images/sidebarselected.png')");
   },
   function() {
-    $(this).css("background-image", "url('images/sidebar.png')");
+    $(this).css("background-image", "url('css/images/sidebar.png')");
   });
 
   $('.result').hover(function() {
@@ -1043,7 +1043,7 @@ $(document).ready(function() {
     showResults(sorted);
     // hide sort bar
     $('#sortbar').css("display", "none");
-    $('#sortbox > img').attr("src", "images/expand.png");
+    $('#sortbox > img').attr("src", "css/images/expand.png");
     sortbar = false;
   });
 
@@ -1056,24 +1056,24 @@ $(document).ready(function() {
 
   // toggle sidebar filter menu
   $('#filtertoggle').click(function() {
-    if (filtertoggle) $('#filtertoggle > img').attr("src", "images/expand.png");
-    else $('#filtertoggle > img').attr("src", "images/shrink.png");
+    if (filtertoggle) $('#filtertoggle > img').attr("src", "css/images/expand.png");
+    else $('#filtertoggle > img').attr("src", "css/images/shrink.png");
     filtertoggle = !filtertoggle;
     $('#filters').toggle();
   });
 
   // toggle sidebar cuisine menu
   $('#cuisinetoggle').click(function() {
-    if (cuisinetoggle) $('#cuisinetoggle > img').attr("src", "images/expand.png");
-    else $('#cuisinetoggle > img').attr("src", "images/shrink.png");
+    if (cuisinetoggle) $('#cuisinetoggle > img').attr("src", "css/images/expand.png");
+    else $('#cuisinetoggle > img').attr("src", "css/images/shrink.png");
     cuisinetoggle = !cuisinetoggle;
     $('#cats').toggle();
   });
 
   // toggle sidebar recent searches menu
   $('#searchtoggle').click(function() {
-    if (searchtoggle) $('#searchtoggle > img').attr("src", "images/expand.png");
-    else $('#searchtoggle > img').attr("src", "images/shrink.png");
+    if (searchtoggle) $('#searchtoggle > img').attr("src", "css/images/expand.png");
+    else $('#searchtoggle > img').attr("src", "css/images/shrink.png");
     searchtoggle = !searchtoggle;
     $('#searchhistory').toggle();
   });
@@ -1117,7 +1117,7 @@ $(document).ready(function() {
       var placeId = $(this).data('id');
       var marker;
       var icon = {
-        url: 'images/selected.png',
+        url: 'css/images/selected.png',
         anchor: new google.maps.Point(8, 25),
 scaledSize: new google.maps.Size(41, 41)      };
       markers.forEach(function (m) {
@@ -1130,7 +1130,7 @@ scaledSize: new google.maps.Size(41, 41)      };
       var placeId = $(this).data('id');
       var marker;
       var icon = {
-        url: 'images/marker.png',
+        url: 'css/images/marker.png',
         anchor: new google.maps.Point(8, 25),
 scaledSize: new google.maps.Size(41, 41)      };
       markers.forEach(function (m) {
@@ -1178,11 +1178,11 @@ scaledSize: new google.maps.Size(41, 41)      };
   $('#sortbox').click(function() {
     if (sortbar) {
       $('#sortbar').css("display", "none");
-      $('#sortbox > img').attr("src", "images/expand.png");
+      $('#sortbox > img').attr("src", "css/images/expand.png");
     }
     else {
       $('#sortbar').css("display", "table");
-      $('#sortbox > img').attr("src", "images/shrink.png");
+      $('#sortbox > img').attr("src", "css/images/shrink.png");
     }
     sortbar = !sortbar;
   });
