@@ -3,7 +3,7 @@ body {
 	height: 100%;
   margin: 0 auto;
   font-family: Roboto;
-  color: black;
+  color: #474747;
 	  background-image: url('images/back.jpg');
 
 }
@@ -173,10 +173,12 @@ body {
 
 #map {
 	position: fixed;
-  height: 500px;
-  width: 1100px;
-  z-index: 1;
+  height: inherit;
+  width: inherit;
+  	border-right:solid #2437c4 1px;
+  z-index: 0;
 	float: top;
+
 
 }
 
@@ -197,8 +199,8 @@ body {
 
 }
 #results {
-	height: 500px;
-	width: 450px;
+	height: inherit;
+	width: 35%;
 	background-color: #fdfdfd;
 	z-index: 0;
 	float: right;
@@ -207,7 +209,7 @@ body {
 }
 #profile12 {
 	height: inherit;
-	width: 450px;
+	width: 35%;
 	background-color: #fdfdfd;
 	z-index: 0;
 	float: right;
@@ -216,7 +218,7 @@ body {
 }
 #place {
 	height: inherit;
-	width: 450px;
+	width: 35%;
 	background-color: #fdfdfd;
 	z-index: 0;
 	float: right;
@@ -227,7 +229,7 @@ body {
 #resultsheader {
 	cursor: default;
 	position: fixed;
-	width: 450px;
+	width: 35%;
 	padding: 1em;
 	color: white;
 	background-color: #2437c4;
@@ -294,6 +296,7 @@ body {
 	padding-right: 2px;
 	cursor: pointer;
 	z-index: 1;
+	background-color: white;
 	  box-shadow: 0 4px 8px 0 rgba(8, 0, 176, 0.2), 0 6px 20px 0 rgba(81, 70, 238, 0.19);
 
 }
@@ -302,7 +305,7 @@ body {
 	min-height: 104px;
 	width: auto;
 	padding-top: 4px;
-	background-color: #fdfdfd;
+	background-color: white;
 	z-index: 1;
 }
 
